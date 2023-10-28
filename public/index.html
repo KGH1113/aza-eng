@@ -4,17 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Aza English</title>
+    <title>Animated Scrolling Nav</title>
   </head>
 
   <body>
     <header>
-      <!-- <img src="images/logo.png" id="logo"> -->
+      <!-- <img src="./assets/img/logo.png" id="logo" /> -->
       <nav>
-        <a href="#main">Main</a>
-        <a href="#profile">Introduction</a>
+        <a href="#main">Aza</a>
+        <a href="#profile">Profile</a>
         <a href="#social">Contact</a>
-        <a href="#about">Suggestion</a>
+        <a href="#about">Suggest</a>
         <button id="menu">
           <span></span>
           <span></span>
@@ -23,24 +23,42 @@
     </header>
 
     <div id="container">
-      <section
-        class="main"
-        id="main"
-        style="background-image: url(./assets/img/1.png)"
-      >
-        <h1>Aza English</h1>
+      <section id="main" style="background-image: url(./assets/img/1.png)">
+        <div class="info-container">
+          <h1>Aza English</h1>
+          <p class="info-text">
+            Lorem Ipsum: Lorem Ipsum is simply dummy text of the printing and
+            typesetting industry.
+          </p>
+        </div>
       </section>
       <section id="profile" style="background-image: url(./assets/img/2.jpg)">
-        <h1>Introduction</h1>
-        <div>INTRO HERE</div>
+        <div class="info-container">
+          <h1>Profile</h1>
+          <p class="info-text">
+            Lorem Ipsum: Lorem Ipsum is simply dummy text of the printing and
+            typesetting industry.
+          </p>
+        </div>
       </section>
       <section id="social" style="background-image: url(./assets/img/3.jpg)">
-        <h1>Contact</h1>
-        <div>CONTACT INFO HERE</div>
+        <div class="info-container">
+          <h1>Contact Us</h1>
+          <p class="info-text">
+            Lorem Ipsum: Lorem Ipsum is simply dummy text of the printing and
+            typesetting industry.
+          </p>
+        </div>
       </section>
       <section id="about" style="background-image: url(./assets/img/4.jpg)">
-        <h1>Suggestion</h1>
-        <a href="./suggestion-request">Go to request some suggestions</a>
+        <div class="info-container">
+          <h1>Suggest</h1>
+          <!-- <p class="info-text">
+            Lorem Ipsum: Lorem Ipsum is simply dummy text of the printing and
+            typesetting industry.
+          </p> -->
+          <a href="/suggestion-request"><button class="move-page-btn">Go to request Suggestion</button></a>
+        </div>
       </section>
     </div>
 

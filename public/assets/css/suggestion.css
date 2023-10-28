@@ -16,18 +16,21 @@ body {
   transform: scale(1.2);
 }
 
-section {
-  background-position: center center;
+.main {
   display: flex;
+}
+
+section {
   align-items: center;
   justify-content: center;
   height: 100vh;
   position: relative;
   background-size: cover;
   padding: 50px;
+  opacity: 0.5;
 }
 
-section::after {
+/* section::after {
   content: "";
   position: absolute;
   background-color: #000;
@@ -36,27 +39,78 @@ section::after {
   top: 0;
   left: 0;
   opacity: 0.5;
-}
+} */
 
-.info-container {
-  z-index: 2;
-}
-
-h1 {
+section h1 {
   font-size: 120px;
   z-index: 2;
+  border-radius: 1.5rem;
+  width: fit-content;
+  /* color: rgba(255, 255, 255, 0.3); */
 }
-
-.info-text {
-  font-size: 1.5rem;
-}
-
-.move-page-btn {
-  border: 2px solid rgb(80, 80, 80);
-  padding: 1.5rem 3rem;
-  background-color: rgba(80, 80, 80, 0.3);
+/* section h1::before {
+  font-size: 120px;
+  z-index: 2;
+  border-radius: 1.5rem;
+  width: fit-content;
+  content: "Suggestion";
+  position: absolute;
   color: #fff;
-  margin: 40px;
+} */
+
+section a {
+  border: none;
+  border-radius: 1.5rem;
+  font-size: 1rem;
+  padding: 1rem;
+  width: 40%;
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  z-index: 999;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: #fff 6px 6px;
+}
+
+section a:hover {
+  text-decoration: underline;
+}
+
+section div {
+  border: none;
+  border-radius: 1.5rem;
+  font-size: 2rem;
+  padding: 3rem;
+  width: 60%;
+}
+
+section form {
+  width: 80%;
+  padding: 2rem;
+  border: 2px none;
+  border-radius: 1.5rem;
+  background-color: #fff;
+  box-shadow: rgba(255, 255, 255, 0.3) 8px 8px;
+}
+
+section form input {
+  width: calc(100% - 2rem);
+  border: none;
+  padding: 1rem;
+  background-color: #737373;
+  margin: 0 0 40px 0;
+  color: #fff;
+}
+
+section form p {
+  color: #000;
+  margin: 1.5rem 0;
+}
+
+section form button {
+  border: none;
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 header {
@@ -84,7 +138,7 @@ header nav {
   position: fixed;
   left: 0;
   right: 0;
-  width: 420px;
+  width: 520px;
   z-index: 100;
   top: 130px;
   margin: 0 auto;
@@ -175,42 +229,10 @@ header.sticky nav a {
   transition-delay: 0.1s;
 }
 
-section div form {
-  width: 80%;
-  padding: 2rem;
-  border: 2px solid rgb(80, 80, 80);
-  background-color: rgba(80, 80, 80, 0.3);
-  z-index: 2;
-}
-
-section div form input {
-  width: calc(100% - 2rem);
-  padding: 1.5rem 0.8rem;
-  background-color: transparent;
-  border: 2px solid rgb(80, 80, 80);
-  margin: 0 0 40px 0;
-  color: #fff;
-}
-
-section div form p {
-  color: #fff;
-  margin: 1.5rem 0;
-  font-size: 1.5rem;
-}
-
-section div form button {
-  border: 2px solid rgb(80, 80, 80);
-  padding: 1.5rem 3rem;
-  background-color: transparent;
-  color: #fff;
-  /* margin: 40px; */
-}
-
-@media screen and (max-width: 520px) {
+/* @media screen and (max-width: 520px) {
   header nav {
     height: 60px;
-    /* width: 390px; */
-    width: calc(100% - 2rem);
+    width: calc(100% - 1rem);
   }
 
   header nav button {
@@ -230,4 +252,4 @@ section div form button {
     width: 70px;
     height: 70px;
   }
-}
+} */
